@@ -4,7 +4,7 @@ from glob import glob
 from .Container import Container
 
 def get_module_paths(path_pattern):
-    return glob(path_pattern)
+    return glob(path_pattern, recursive=True)
 
 def load_modules(module_paths):
     return map(import_module, module_paths)
@@ -18,6 +18,8 @@ def load_and_register_modules(path_pattern, container):
     
     for module in modules:
         register_module(module, container)
+    
+    return container
 
 def get_new_container():
     return Container()

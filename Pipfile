@@ -12,6 +12,7 @@ pytest = "*"
 pyautodi = {path = "."}
 autopep8 = "*"
 rope = "*"
+py-auto-di = {path = "."}
 
 [packages]
 
