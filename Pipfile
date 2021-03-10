@@ -4,8 +4,10 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [scripts]
-dist = "python ./setup.py sdist --formats=gztar,zip"
 test = "python -m pytest"
+dist = "python ./setup.py sdist --formats=gztar,zip"
+test-publish = "twine upload --repository-url https://test.pypi.org/legacy/ dist/*"
+publish = "twine upload dist/*"
 
 [dev-packages]
 pytest = "*"
