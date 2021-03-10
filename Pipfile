@@ -1,0 +1,19 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[scripts]
+dist = "python ./setup.py sdist"
+test = "python -m pytest"
+
+[dev-packages]
+pytest = "*"
+pyautodi = {path = "."}
+autopep8 = "*"
+rope = "*"
+
+[packages]
+
+[requires]
+python_version = "3.8"
