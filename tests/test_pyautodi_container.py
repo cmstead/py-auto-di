@@ -1,4 +1,4 @@
-from PyAutoDI.PyAutoDI import get_new_container
+from PyAutoDI.__main__ import get_new_container
 import abc
 
 
