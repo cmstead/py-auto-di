@@ -2,6 +2,17 @@
 
 ## What Is It? ##
 
+PyAutoDI is a simple dependency injection library which simplifies the process of creating and managing application dependency trees. The goal of PyAutoDI is to be lightweight and powerful with a shallow learning curve.
+
+The core tenets of PyAutoDI are:
+
+- Make it easy to use dependency injection
+- Limit stuff humans have to remember
+- Be project structure agnostic
+- Break application filesystem coupling
+
+If you aren't clear about what dependency injection is, [have a look at this primer](https://www.freecodecamp.org/news/a-quick-intro-to-dependency-injection-what-it-is-and-when-to-use-it-7578c84fa88f/).
+
 ## Setup ##
 
 ### Installing PyAutoDi ###
