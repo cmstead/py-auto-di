@@ -50,4 +50,11 @@ class Container:
         self.register_by_name(name, override_class, original_interface)
 
     def new(self):
-        pass
+        new_container = Container()
+
+        registry_keys = self.get_registry_keys()
+
+        for registry_key in registry_keys:
+            new_container.register(self.registry[registry_key]["dependency_class"])
+
+        return new_container
