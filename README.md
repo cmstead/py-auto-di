@@ -65,7 +65,19 @@ app_container = get_new_container()
 
 Easy peasy.
 
-## Building Dependencies ##
+## Building Injected Dependencies ##
+
+Building any injected dependency is a one-liner:
+
+```
+new_instance = container.build("my_dependency")
+```
+
+Though this behavior could be used as a service locator, resist the temptation.
+
+It is recommended that you only build dependencies this way at the entrypoint of your application. PyAutoDI will manage the dependency tree for you, so you don't need to worry about managing dependencies at each level.
+
+## Writing Injectible Dependencies ##
 
 ### Auto-registering Dependencies ###
 If you are planning on having PyAutoDI discover and register your dependencies, they need to follow a simple convention:

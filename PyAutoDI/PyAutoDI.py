@@ -18,7 +18,7 @@ def build_module_path(file_path):
 
 def load_modules(file_paths):
     module_paths = filter(
-        lambda path: not re.match("__init__", path),
+        lambda path: not re.search("__init__", path),
         map(build_module_path, file_paths)
     )
 
