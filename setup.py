@@ -6,7 +6,7 @@ README_CONTENT = (CURRENT_DIR / "README.md").read_text()
 
 setup(
     name='py-auto-di',
-    version='0.1.2',
+    version='0.1.3',
     packages=["PyAutoDI"],
     include_package_data=True,
     author="Chris Stead",
